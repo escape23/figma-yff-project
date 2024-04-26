@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet" />
+    <title>Simply Chocolate</title>
+    <!--Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="nav-logo link">
+            Coffee Guide<img
+              src="./images/mug-1.png"
+              alt="logo image"
+              width="24"
+              height="24"
+              style="margin-left: 5px"
+          /></a>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a href="#home" class="nav-link link">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#made" class="nav-link link">How it's made?</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#loved" class="nav-link link">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-soc list">
+          <li class="soc-item">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="soc-link link"
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="soc-link link"
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--Section 1: Hero-->
+      <section id="home" class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <div class="hero-buttons">
+            <button type="button" class="hero-btn" data-action="open-modal">
+              Buy now
+            </button>
+            <a href="#made" class="hero-link link">How it's made?</a>
+            <a href="#footer" class="hero-scroll-link link"
+              >scroll down<span
+                ><svg class="hero-scroll-icon" width="22" height="22">
+                  <use href="./images/icons.svg#angle-icon"></use></svg></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!--Section 2: Benefits-->
+      <section>
+        <h2 class="made-title">Find PLACE</h2>
+        <div
+          style="display: flex; gap: 40px; justify-content: space-between"
+          class="container">
+          <div>
+            <form id="travel-form" class="travel-class">
+              <label for="all-included">All included:</label>
+              <select id="all-included" name="all-included" class="form-travel">
+                <option value="option1">Family trip</option>
+                <option value="option2">Romantic trip</option>
+                <option value="option3">Friends trip</option>
+              </select>
+
+              <label for="travelers">Number of travelers:</label>
+              <input
+                type="number"
+                id="travelers"
+                name="travelers"
+                class="form-travel" />
+
+              <label for="caffe">Type of coffee:</label>
+              <select id="caffe" name="coffee" class="form-travel">
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+              </select>
+
+              <label for="trip-type">Round trip:</label>
+              <select id="trip-type" name="trip-type" class="form-travel">
+                <option value="round-trip">Round Trip</option>
+                <option value="one-way">One Way</option>
+              </select>
+
+              <label for="from">From:</label>
+              <input type="text" id="from" name="from" class="form-travel" />
+
+              <label for="departure-date">Date of departure:</label>
+              <input
+                type="date"
+                id="departure-date"
+                name="departure-date"
+                class="form-travel" />
+
+              <label for="return-date">Date of return:</label>
+              <input
+                type="date"
+                id="return-date"
+                name="return-date"
+                class="form-travel" />
+
+              <input type="submit" value="Submit" class="form-travel" />
+            </form>
+          </div>
+          <div><img src="./images/image2.png" /></div>
+        </div>
+      </section>
+
+      <!--Section 3: Products-->
+      <!--Section 4: How it's made?-->
+      <section id="made" class="made">
+        <div class="container">
+          <h2 class="made-title">HOW IT'S <span>MADE?</span></h2>
+          <div class="made-wrap">
+            <img
+              src="./images/cups-coffe.png"
+              alt="chocolate"
+              width="600"
+              height="400"
+              class="made-img" />
+            <div class="made-content">
+              <p class="made-text">
+                Try our coffee today and discover the perfect balance of flavor
+              </p>
+              <ul class="made-list list">
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Indulge in the perfect coffee experience today and savor the
+                    harmonious blend of rich flavors. Start by brewing your
+                    favorite coffee beans to perfection. Meanwhile, warm the
+                    milk on the stove without allowing it to reach a boil. Add a
+                    touch of sweetness, if desired, and stir in the velvety
+                    milk.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Simultaneously, set up a water bath to gently melt a bit of
+                    chocolate or enhance the richness with a dash of vanilla
+                    extract. Mix the brewed coffee and the luxuriously melted
+                    ingredient thoroughly, creating a luscious and well-balanced
+                    concoction.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Let the mixture simmer on low heat, allowing the flavors to
+                    meld into a delightful symphony. Pour this heavenly coffee
+                    infusion into your preferred mugs or, for a creative twist,
+                    use ice cube trays for an iced coffee variation. Allow it to
+                    cool and set, providing you with a refreshing and satisfying
+                    coffee treat. Embrace the perfect balance of bold coffee
+                    flavor and creamy indulgence in every sip!
+                  </p>
+                </li>
+                <!-- <li class="made-item">
+                  <p class="made-item-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section 5: Chocolate is loved-->
+    </main>
+    <!--Footer-->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <p class="footer-text">
+            <span>Coffee</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-contact-wrap">
+            <p class="footer-contact">Contact us</p>
+            <address class="footer-address">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a href="tel:++47 47 761 689" class="footer-address-link link"
+                    >+47 47 761 689</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    href="mailto:simplychoc@gmail.com"
+                    class="footer-address-link link">
+                    coffeeguide@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <nav class="footer-navigation list">
+          <ul class="footer-menu-list list">
+            <li class="footer-menu-item">
+              <a href="#home" class="footer-menu-link link">Home</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#made" class="footer-menu-link link">How it's made?</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#loved" class="footer-menu-link link">Coffee is loved</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn" data-action="close-modal">
+          <svg class="close-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+                placeholder="Name" />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#user-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+                placeholder="Email" />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#mail-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+                required
+                placeholder="Phone number" />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-textarea-box">
+            <textarea
+              class="modal-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter text"></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="input-check visually-hidden"
+              value="true"
+              checked />
+            <label for="policy" class="check-text"
+              ><span>
+                <svg class="checkbox-icon" width="10" height="10">
+                  <use
+                    href="./images/icons.svg#icon-checkbox"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="check-link">Privacy Policy</a></label
+            >
+          </div>
+          <button class="send-button" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
